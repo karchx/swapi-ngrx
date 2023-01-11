@@ -1,0 +1,8 @@
+<app-loader *ngIf="isLoading$ | async;else mainContent"></app-loader>
+
+<ng-template #mainContent>
+  <div class="main-content">
+    <app-character-card *ngFor="let character of characters$ | async" [name]="character.name"
+      [eye_color]="character.eye_color" [gender]="character.gender" [films]="character.films"></app-character-card>
+  </div>
+</ng-template>

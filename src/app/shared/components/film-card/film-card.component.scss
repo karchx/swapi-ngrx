@@ -1,0 +1,63 @@
+.card-container {
+  background: white;
+  width: 300px;
+  margin: auto;
+  border-radius: 14px + 5;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  margin: 20px;
+  font: 14px/20px "Lato", Arial, sans-serif;
+}
+
+.card-image {
+  position: relative;
+  height: 230px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background: url("../../../../assets/images/bg_card.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-information {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  .card-title {
+    font-size: 26px;
+    color: black;
+    font-weight: 900;
+  }
+
+  .card-episode {
+    color: #ffc401;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+.card-button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bolder;
+  width: 100%;
+  color: white;
+  background: #ffc401;
+  font-weight: 700;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  background: #cc9c00;
+}

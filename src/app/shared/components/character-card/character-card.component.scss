@@ -1,0 +1,47 @@
+.card-container {
+  background: white;
+  width: 225px;
+  margin: auto;
+  border-radius: 14px + 5;
+  position: relative;
+  text-align: center;
+  box-shadow: -1px 15px 30px -12px black;
+  margin: 10px;
+  font: 14px/20px "Lato", Arial, sans-serif;
+}
+
+.card-image {
+  position: relative;
+  height: 230px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  background: url("../../../../assets/images/bg_card.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-information {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  #card-name {
+    font-size: 20px;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 15px;
+  }
+
+  #card-eye-color {
+    margin-bottom: 10px;
+  }
+
+  .title {
+    color: #ffc401;
+    font-weight: 900;
+  }
+}

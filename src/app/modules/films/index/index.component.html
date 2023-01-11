@@ -1,0 +1,8 @@
+<app-loader *ngIf="isLoading$ | async; else mainContent"></app-loader>
+
+<ng-template #mainContent>
+  <div class="main-content">
+    <app-film-card *ngFor="let film of films$ | async" [title]="film.title" [episode]="film.episode_id"
+      [director]="film.director" [characters]="film.characters.slice(0, 10)"></app-film-card>
+  </div>
+</ng-template>
